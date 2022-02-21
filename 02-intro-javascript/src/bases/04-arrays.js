@@ -1,7 +1,3 @@
-//import "/Users/adrianpisabarrogarcia/Desktop/Git/Introduction-to-React-and-Modern-JS/02-intro-javascript/src/bases/03-objetos-literales.js"
-
-
-
 //Arrays, Arreglos
 
 //const names = ["Carlos","Javi","Jon","Aitor"];
@@ -24,13 +20,3 @@ levelsPlus.push(5)
 console.log(levels)
 console.log(levelsPlus)
 console.log("Hola mundo")
-
-
-
-const people = new Array(); // ❌
-const people2 = []; // ✅
-
-
-
-
-
