@@ -20,3 +20,13 @@ levelsPlus.push(5)
 console.log(levels)
 console.log(levelsPlus)
 console.log("Hola mundo")
+
+
+
+const people = new Array(); // ❌
+const people2 = []; // ✅
+
+
+
+
+
