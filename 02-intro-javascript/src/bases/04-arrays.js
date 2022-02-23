@@ -26,7 +26,14 @@ console.log("Hola mundo")
 const people = new Array(); // ❌
 const people2 = []; // ✅
 
+//heredar un array 👨‍👨‍👧‍👦
+const newLevels = [0,...levels,5,6,7,8,9,10];
+console.log(newLevels)
 
-
-
+//map -> crea un nuevo array con los resultados de la función
+const newNewLevels = newLevels.map(function(number){
+    //necesita un callback, si no lo pondríamos tendriamos todo undefined
+    return number * 2
+})
+console.log(newNewLevels)
 
