@@ -1,36 +1,24 @@
-//import "/Users/adrianpisabarrogarcia/Desktop/Git/Introduction-to-React-and-Modern-JS/02-intro-javascript/src/bases/03-objetos-literales.js"
+//Desestructuración
+//Asignación Desestructurante
 
 
+const person = {
+    name: 'Carlos',
+    age: 30,
+    key: 'Ironman'
+}
 
-//Arrays, Arreglos
-
-//const names = ["Carlos","Javi","Jon","Aitor"];
-const names = new Array(100); //no se recomienda a no ser que tengas un tamaño definido, sino lo haces con []
-names.push("Alexis");
-console.log(names);
-
-
-const sournames = []
-sournames.push("Pisabarro") //pos: 0 
-sournames.push("García") // pos: 1
-console.log(sournames)
-console.log(sournames.length)
-
-//no es recomendable utilizar el push porque accede al objeto principal
-//los arrays son objetos en js
-const levels = [1,2,3,4]
-let levelsPlus = levels
-levelsPlus.push(5)
-console.log(levels)
-console.log(levelsPlus)
-console.log("Hola mundo")
+//En react la mayoría de veces utilizamos los const
+const {name:name2} = person;
+const {name, age, key} = person;
 
 
-
-const people = new Array(); // ❌
-const people2 = []; // ✅
-
-
+console.log(person.name)
+console.log(person.age)
+console.log(person.key)
 
 
+console.log(name2)
+//is deprecated: use destructuring assignment instead
+console.log(name)
 
