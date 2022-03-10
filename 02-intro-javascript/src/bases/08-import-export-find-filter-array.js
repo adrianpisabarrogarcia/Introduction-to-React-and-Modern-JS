@@ -20,7 +20,7 @@ const getHeroById2 = (id) => {
 }
 
 //Como debería de ser
-const getHeroById = (id) => {
+export const getHeroById = (id) => {
     return heroes.find( heroe => heroe.id === id )
 }
 
@@ -29,7 +29,7 @@ console.log(getHeroById(2));
 console.log(getHeroById(3));
 
 //FILTER ARRAY (Encuentra todos)
-const getHeroesByOwner = ( owner ) => {
+export const getHeroesByOwner = ( owner ) => {
     return heroes.filter( heroes => heroes.owner === owner)
 }
 console.log( getHeroesByOwner("DC") )
