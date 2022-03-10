@@ -6,5 +6,3 @@ This repository is going to have all the exercises that I'm going to do to learn
 
 ### Arrancar un proyecto
     $ npm start
-
-
