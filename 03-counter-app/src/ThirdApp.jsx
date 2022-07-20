@@ -22,3 +22,8 @@ ThirdApp.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.number
 }
+
+ThirdApp.defaultProps = {
+    title: 'No hay titulo',
+    subtitle: 'No hay subtitulo'
+}
