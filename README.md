@@ -9,3 +9,12 @@ This repository is going to have all the exercises that I'm going to do to learn
 	$ yarn create vite
 	$ yarn install
 	$ yarn dev
+
+### Instalation of Jest with Yarn
+	$ yarn add --dev jest
+	# Add to the pckage.json the command lines of Jest
+	$ yarn test
+	# Intellisense for Jest
+	$ yarn add -D @types/jest
+	# Install all dependences of Babel
+	# REF: https://jestjs.io/es-ES/docs/getting-started
