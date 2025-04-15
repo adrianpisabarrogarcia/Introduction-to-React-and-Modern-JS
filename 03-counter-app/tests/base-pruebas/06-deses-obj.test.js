@@ -17,7 +17,4 @@ describe('Pruebas en 06-deses-obj6', () => {
         expect( testUserContext() ).toEqual( userContext )
      })
 
-
-
-
  })
