@@ -41,7 +41,7 @@ export const FirstApp = () => {
             multilinea
             <h1>{ newObject.message }</h1>
             */}
-            <h1>{ sayHello('Adrián') }</h1>
+            <h1 data-testid="test-title">{ sayHello('Adrián') }</h1>
         </>
         //</Fragment>
     )
