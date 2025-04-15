@@ -31,10 +31,10 @@ describe('Pruebas en <CounterApp />', () => {
 
     test('Debe de funcionar el botón de reset', () => { 
         render(<CounterApp value={initialValue} />)
-        fireEvent.click(screen.getByText('+1'));
-        fireEvent.click(screen.getByText('+1'));
-        fireEvent.click(screen.getByText('+1'));
-        fireEvent.click(screen.getByText('Reset'));
+        fireEvent.click(screen.getByRole('button', { name: 'btn-add' }));
+        fireEvent.click(screen.getByRole('button', { name: 'btn-add' }));
+        fireEvent.click(screen.getByRole('button', { name: 'btn-add' }));
+        fireEvent.click(screen.getByRole('button', { name: 'btn-reset' }));
         expect(screen.getByText('10')).toBeTruthy();
      })
 })
