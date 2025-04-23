@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export const AddCategory = (
-    { setCategories, categories }: { setCategories: (categories: string[]) => void, categories: string[] }
+    { onNewCategory }: { onNewCategory: (value: string) => void }
 ) => {
   const [inputValue, setInputValue] = useState("");
   
@@ -14,15 +14,7 @@ export const AddCategory = (
       alert("The input cannot be empty");
       return;
     }
-    if (
-      categories
-        .map((cat) => cat.toUpperCase())
-        .includes(inputValue.toUpperCase())
-    ) {
-      alert("The category already exists");
-      return;
-    }
-    setCategories([...categories, inputValue]);
+    onNewCategory(inputValue.trim());
     setInputValue("");
   };
 

@@ -8,6 +8,17 @@ export const GiftExpertApp = () => {
     "Dragon Ball",
   ]);
 
+  const onAddCategory = (newCategory: string) => {
+    if (
+      categories
+        .map((cat) => cat.toUpperCase())
+        .includes(newCategory.toUpperCase())
+    ) {
+      alert("The category already exists");
+      return;
+    }
+    setCategories([...categories, newCategory]);
+  };
 
   return (
     <>
@@ -15,14 +26,18 @@ export const GiftExpertApp = () => {
       <h1>GiftExpertApp</h1>
 
       {/* Input */}
-      <AddCategory setCategories={setCategories} categories={categories} />
+      <AddCategory
+        // setCategories={setCategories} categories={categories}
+        onNewCategory={(value: string) => onAddCategory(value)}
+      />
 
       {/* Listado de Gifs */}
-      <ol>
-        {categories.map((category) => (
-          <li key={category}>{category}</li>
-        ))}
-      </ol>
+      {categories.map((category) => (
+        <div key={category}>
+          <h3></h3>
+          <li>{category}</li>
+        </div>
+      ))}
     </>
   );
 };
