@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { AddCategory } from "./AddCategory";
+import { GiftGrid } from "./GiftGrid";
 
 export const GiftExpertApp = () => {
   const [categories, setCategories] = useState([
     "One Punch",
-    "Samurai X",
-    "Dragon Ball",
+    // "Samurai X",
+    // "Dragon Ball",
   ]);
 
   const onAddCategory = (newCategory: string) => {
@@ -32,12 +33,6 @@ export const GiftExpertApp = () => {
       />
 
       {/* Listado de Gifs */}
-      {categories.map((category) => (
-        <div key={category}>
-          <h3></h3>
-          <li>{category}</li>
-        </div>
-      ))}
-    </>
+      {categories.map((category) => (<GiftGrid key={category} category={category} />))}    </>
   );
 };
