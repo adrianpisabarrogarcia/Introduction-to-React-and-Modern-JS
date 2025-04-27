@@ -1,6 +1,6 @@
 //Consultar a la api para traernos el Gif
 export const getGifs = async (category: string) => {
-    const API_KEY = "kljYisRYuFj2fONRohVuZyf0bobj4va0";
+    const API_KEY = "XXXXXXXXXXXXXXXXXXXXXX";
     const LIMIT = 2;
     const URL = `https://api.giphy.com/v1/gifs/search/?api_key=${API_KEY}&q=${category}&limit=${LIMIT}`;
     const resp = await fetch(URL);
@@ -16,6 +16,5 @@ export const getGifs = async (category: string) => {
             url: img.images.downsized_medium.url,
         })
     );
-    console.log(gifs);
     return gifs;
 };
